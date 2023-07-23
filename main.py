@@ -2,15 +2,16 @@ import cv2
 import numpy as np
 import os
 import matplotlib.pyplot as plt
+import camera.py
 
 from camera import crop
+from camera import capture
 from finder import write_contours_to_file, locate_img_on_img
 
+capture()
 
 img = cv2.imread("temp_img/test_2.png")
 crop_img_path = crop(img)
-
-
 
 
 folder_path = 'image_db'
