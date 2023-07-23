@@ -24,11 +24,9 @@ def crop(img):
     # cv2.waitKey(0)
     cv2.imwrite("temp_img/cropped.png",cropped_image)
     return "temp_img/cropped.png"
+    
 
-
-
-
-# Camera
+    # Camera
 
 def save_image(output_folder, image):
     # Generate a filename with a unique name
@@ -88,3 +86,8 @@ def capture():
     # Release the camera and close the window
     camera.release()
     cv2.destroyAllWindows()
+
+
+
+
+
